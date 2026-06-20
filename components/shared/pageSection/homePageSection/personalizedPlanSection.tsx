@@ -1,18 +1,18 @@
 'use client';
 
 import Image from 'next/image';
-import { content } from '@/lib/content';
+import { constants } from '@/lib/constants';
 import { IMAGES } from '@/public/assests';
 import clsx from 'clsx';
 
 export default function PersonalizedPlanSection() {
-    const { personalizedPlan } = content;
+    const { personalizedPlan } = constants;
 
     return (
         <section className="w-full lg:bg-white bg-gray-50 py-0 lg:py-20 pt-10 px-4 md:px-8">
             <div className="max-w-7xl mx-auto">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center h-full relative">
-                    {/* Left Content */}
+                    {/* Left constants */}
                     <div className="space-y-6 lg:w-[80%]">
                         <div>
                             <h2 className="text-[26px] md:text-3xl lg:text-[76.8px] font-extrabold lg:font-normal leading-[100%] lg:leading-[76.8px] font-manrope mb-4 text-primary">

@@ -1,90 +1,89 @@
-/**
- * Centralized content for the entire application
- * Single source of truth for all text, headings, and copy
- */
-
 import { IMAGES } from "@/public/assests";
 
-export const content = {
+export const constants = {
   meta: {
     title: "Sleek - Weight Loss & Metabolic Health",
     description: "Science-backed weight loss and metabolic health management",
   },
 
-  // Hero Section - It's time to reach your weight loss goals
-  hero: {
-    title: "It's time to reach your weight loss goals",
+  // Goals Section data
+  goals: {
+    title: "It’s time to reach your weight loss goals",
     subtitle:
-      "We use proven behavioral science and medication options to help you succeed",
+      "We are your partner in lasting weight loss, with clinician-guided GLP-1 care that keeps real results within reach.",
     features: [
-      { text: "GLP-1 prescriptions", icon: "💊" },
-      { text: "24/7 doctor support", icon: "👨‍⚕️" },
-      { text: "In-app coaching", icon: "📱" },
-      { text: "1-on-1 doctor visits", icon: "🏥" },
+      { text: "GLP-1 medication access", icon: IMAGES.INSIGHT_ICON },
+      { text: "Round-the-clock support", icon: IMAGES.LOCK_ICON },
+      { text: "Online provider visits", icon: IMAGES.PACKAGE_ICON },
+      { text: "Free overnight delivery", icon: IMAGES.TROPHY_ICON },
     ],
-    image:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-8T2EGZb7EeC8OyX1FmhZLaTJcpHG6y.png",
-    subHeading: "It's not willpower, it's metabolic science",
+    featuresDescription:
+      "After 68 weeks, participants administering once-weekly semaglutide treatment experienced an average of 15% reduction in body weight.The mean change in body weight from baseline to week 68 was −14.9% in the semaglutide group as compared with −2.4% with placebo.Source",
+    image: IMAGES.GOALS_BG_IMG,
+    subHeading: "It’s not willpower, it’smetabolic science",
+    subDescription:
+      "Lose up to 14.9% of your body weight in three simple steps",
     benefits: [
       {
-        icon: "1",
+        icon: "01",
         title: "Sign up",
-        description: "Take our health assessment in minutes",
+        description:
+          "Answer a few quick health questions. It takes about five minutes.",
       },
       {
-        icon: "2",
+        icon: "02",
         title: "Get prescribed",
-        description: "Board-certified doctors review your case",
+        description:
+          "A licensed provider reviews your intake after checkout to confirm you’re a good fit.",
       },
       {
-        icon: "3",
+        icon: "03",
         title: "Get your GLP-1",
-        description: "Medications shipped directly to you",
+        description:
+          "Once you’re approved, your medication ships straight to your door overnight.",
       },
     ],
-    cta: { text: "get started", href: "#" },
+    cta: { text: "see if you qualify", href: "#" },
   },
 
-  // Focus on You - 4 Feature Cards (2x2 Grid)
   focusOnYou: {
     cards: [
       {
-        id: "focus",
-        title: "Focus on all of you",
+        title: "Focus on",
+        secondTitle: "all of you",
         description:
-          "We only prescribe treatments that have been approved by the FDA",
-        image:
-          "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-jbF1PPFaMPdWkBvqgfbGLnmbam8nPl.png",
+          "We only prescribes trusted medication that has been rigorously tested for quality and safety. ",
+        image: IMAGES.FOCUS_ON_YOU_ONE,
         cta: { text: "get started", href: "#" },
       },
       {
-        id: "manage",
-        title: "Easily manage treatments",
+        title: "Easily manage",
+        secondTitle: "treatments",
         description:
-          "Our team is available to support our members every step of the way",
-        image:
-          "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-jbF1PPFaMPdWkBvqgfbGLnmbam8nPl.png",
+          "Our team is always available to support our members, day and night.",
+        image: IMAGES.FOCUS_ON_YOU_TWO,
         cta: { text: "get started", href: "#" },
       },
       {
-        id: "doctor",
-        title: "Doctor-trusted medications",
+        title: "Doctor-trusted",
+        secondTitle: "medications",
         description:
-          "We only prescribe treatments that have been approved by the FDA",
-        image:
-          "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-jbF1PPFaMPdWkBvqgfbGLnmbam8nPl.png",
+          "We only prescribes trusted medication that has been rigorously tested for quality and safety.",
+        image: IMAGES.FOCUS_ON_YOU_THREE,
         cta: { text: "get started", href: "#" },
       },
       {
-        id: "experts",
-        title: "Access to the experts always",
+        title: "Access to ",
+        secondTitle: "the experts always",
         description:
-          "Every plan comes with 24/7 access to our medical team to answer questions or concerns",
-        image:
-          "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-jbF1PPFaMPdWkBvqgfbGLnmbam8nPl.png",
+          "Every plan comes with 24/7 access to our medical team, to answer any questions or concerns you may have.",
+        image: IMAGES.FOCUS_ON_YOU_FOUR,
         cta: { text: "get started", href: "#" },
       },
     ],
+    bottomText1: `Compounded drugs are not FDA-approved or evaluated for safety, effectiveness, or quality by the FDA. \n Product images are illustrative and the actual product received may differ in appearance.`,
+    bottomText2:
+      "Paid testimonials. Before and after images shared by customers. Customers' results have not been independently verified. Individual results may vary. Weight Loss is a holistic program that includes nutrition support, technological tools, and compounded medication based on what your provider determines is best for you, along with a reduced calorie diet and exercise. Stopping treatment has been shown to result in weight regain.",
   },
 
   // A Plan Made Around Your Body
@@ -208,4 +207,4 @@ export const content = {
   },
 };
 
-export type Content = typeof content;
+export type constants = typeof constants;

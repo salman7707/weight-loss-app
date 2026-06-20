@@ -1,10 +1,10 @@
 'use client';
 
 import Image from 'next/image';
-import { content } from '@/lib/content';
+import { constants } from '@/lib/constants';
 
 export default function GLPPlanSection() {
-    const { glp1Solution } = content;
+    const { glp1Solution } = constants;
 
     return (
         <section className="w-full bg-white py-12 md:py-20 px-4 md:px-8">
